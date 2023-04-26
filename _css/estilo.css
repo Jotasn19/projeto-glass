@@ -9,16 +9,17 @@
 body {
     background-color: #dddd;
     color: rgba(0, 0, 0, 1); 
-    width: 100%; 
+    width: 1920px; 
     font-family : arial, sans-serif;
 }
 
 div#interface{
-    width: 90%;
+    width: 1780px;
     background-color: white;
     margin:-20px auto 10px auto ; 
     padding: 10px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    
 
 }
 
@@ -42,7 +43,7 @@ a:hover{
 
 header#cabecalho img#icone{
     position: absolute;
-    left: 713px;
+    left: 1600px;
     top: 80px;
 }
 
@@ -117,7 +118,7 @@ nav#menu ul{
     text-transform:uppercase; 
     position: absolute;
     top: -20px;
-    left: 420px; 
+    left: 1200px; 
 }
 
 nav#menu li{
@@ -126,6 +127,7 @@ nav#menu li{
     padding: 10px;
     margin: 2px;
     transition: background-color 1s;
+    border-radius: 15px;
 }
 nav#menu li:hover{
     background-color:#606060
@@ -149,7 +151,7 @@ nav#menu a:hover{
 
 section#corpo{
    display: block;
-   width: 480px; 
+   width: 580px; 
    float: left;
    border-right:1px solid #606060 ;
    padding: 14px;
@@ -191,12 +193,14 @@ header#cabecalho-sub h3{
 
 aside#lateral{
     display: block;
-    width: 305px;
-    float: right;
+    width: 400px;
+    float: left;
     padding: 10px;
     background-color: #c4c1c1;
     margin-top: 10px;
+    margin-left: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+    
 }
 
 aside#lateral h1{

@@ -4,6 +4,7 @@
     <meta charset=" utf-8"/>
     <title>Todo sobre gloogle glass</title> 
     <link rel="stylesheet"type="text/css" href="_css/estilo.css"/>
+    <link rel="stylesheet" href="_css/media.css"/>
     
 </head>
 <script src="_javascript/funcoes.js"> </script>
@@ -15,34 +16,42 @@
         <h1>Google Glass</h1>
         <h2>A revolução do Google está chegando</h2>
         </hgroup>
+  <img id="icone" src="_imagens/multimidia.png"/>
 
-<img id="icone" src="_imagens/glass-oculos-preto-peq.png"/>
 
 <nav id="menu">
-<h1>Menu Principal</h1>
-<ul type="disc"> 
-    <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html" target="_self">Home</a></li>
-    <li onmouseover="mudaFoto('_imagens/especificacoes.png')"  onmouseout="mudaFoto('_imagens/multimidia.png')"  ><a href="specs.html" target="_self">Especificações</a></li>
-    <li onmouseover="mudaFoto('_imagens/Fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html" target="_self">Fotos</a></li>
-    <li onmouseover="mudaFoto('_imagens/multimidia.png')"onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html"target="_self">Multimídia</a></li>
-    <li onmouseover="mudaFoto('_imagens/contato.png')"onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html" target="_self">Fale conosco</a></li>
+    <h1>Menu Principal</h1>
+    <ul type="disc"> 
+        <li onmouseover="mudaFoto('_imagens/home.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="index.html" target="_self">Home</a></li>
+        <li onmouseover="mudaFoto('_imagens/especificacoes.png')"  onmouseout="mudaFoto('_imagens/multimidia.png')"  ><a href="specs.html" target="_self">Especificações</a></li>
+        <li onmouseover="mudaFoto('_imagens/Fotos.png')" onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fotos.html" target="_self">Fotos</a></li>
+        <li onmouseover="mudaFoto('_imagens/multimidia.png')"onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="multimidia.html"target="_self">Multimídia</a></li>
+        <li onmouseover="mudaFoto('_imagens/contato.png')"onmouseout="mudaFoto('_imagens/multimidia.png')"><a href="fale-conosco.html" target="_self">Fale conosco</a></li>
 </ul>
 </nav>
-
 </header>
 
-Glass > Multimídia
-Sons e Vídeos
-por Gustavo Guanabara
-Atualizado em 01/Maio/2013
+<section id="corpo-full">
+    <article id="noticia-principal">
+<header id="cabecalho-sub">
+<hgroup>
+<h3>Glass > Multimídia</h3>
+<h1>Sons e Vídeos</h1>
+<h2>por Gustavo Guanabara</h2>
+<h3 class="direita">Atualizado em 01/Maio/2013</h3>
+</hgroup>
+</header>
 
+<div id="tv-radio">
+    <audio id="musica" controls="controls">
+        <source src="_media/2009-lovers-carvings-bibio.mp3" type="audio/mpeg"/>
 
-Áudio e Vídeo
-
-[AQUI ENTRA UM VÍDEO]
-[AQUI ENTRA UM ÁUDIO]
-
-</article>
+    </audio>
+    <video id="filme"controls="controls" poster="_imagens/video-mini03.jpg">
+        <source src="_media/getting-started.mp4" type="video/mp4"/>
+    </video>
+</div>
+    </article>
 </section>
 
 <footer id="rodape">
@@ -50,6 +59,34 @@ Atualizado em 01/Maio/2013
              <a href="https://www.instagram.com/vitorsn19/"target="_blank">Instagran</a> |
              <a href="https://twitter.com/jvitorsn19"target="_blank"> Twitter</a></p>
     </footer>
-    </div>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

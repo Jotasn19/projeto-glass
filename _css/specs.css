@@ -10,6 +10,8 @@ iframe#frame-spec{
     height: 280px;
     overflow: hidden;
     border: none;
+    left: 530px;
+    position: relative;
 }
 
 
