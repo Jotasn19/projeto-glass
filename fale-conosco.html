@@ -5,10 +5,19 @@
     <meta charset=" utf-8"/>
     <title>Todo sobre gloogle glass</title> 
     <link rel="stylesheet"type="text/css" href="_css/estilo.css"/>
-    <link rel="stylesheet" href="_css/media.css"/>
+    <link rel="stylesheet" href="_css/form.css"/>
     
 </head>
 <script src="_javascript/funcoes.js"> </script>
+<script>
+    function calc_total (){
+        var qtd = parseInt( document.getElementById('cQnt') .value );
+        tot= qtd * 1500;
+        document.getElementById ('cPrt') .value = tot;
+
+    }
+
+</script>
 
 <body>
     <div id="interface">
@@ -46,13 +55,14 @@
 </hgroup>
 </header>
 
-<form method="post" id="fContato" action="jvitorsn19@gmail.com">
-<fieldset id="usuario">
+<form method="post" id="fContato" action="jvitorsn19@gmail.com" oninput="calc_total();">
+
+    <fieldset id="usuario">
       <legend>Identificação do Usuário</legend>
 <p> <label for="cNome"> Nome:</label> <input type="text" name="tNome" id="cNome" size="20" maxlength="30" placeholder="Nome completo"/></p>
 <p> <label for="csenha"> Senha:</label> <input type="password" name="tsenha" id="csenha" size="6" maxlength="6" placeholder="6 digitos"/> </p>
 <p> <label for="cmail"> E-mail:</label> <input type="email" name="tmail" id="cmail" size="20" maxlength="40"/> </p>
-</fieldset>
+
 
 <fieldset id="sexo"> 
     <legend> Sexo:</legend>
@@ -62,7 +72,7 @@
 <p> <label for="cdata"> Data de Nascimento:</label> <input type="date" name="tdata" id="cdata"> </p>
 </fieldset>
 
-<fieldset>
+<fieldset id="endereco">
          <legend> Endereço do Usuário</legend>   
 <p> <label for="cRua"> Logradouro: </label> <input type="text" name="tRua" id="cRua" size="20" maxlength="80" placeholder="Rua, Av, Trav ..." /> </p>
 <p> <label for="cNun"> Número:</label>  <input type="number" name="tNun" id="cNun" min="0" max="99999"/> </p>
@@ -94,22 +104,25 @@
 </datalist>
 </fieldset>
 
-<fieldset>
+<fieldset id="mensagen">
 <legend> Mensagem do Usuário</legend>
     <p><label for="cUrg"> Grau de Urgência: Min<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2.5"/>Max </label></p>
     <p><label for="cMsg"> Mensagem: </label> <textarea name="tMsg" id="cMsg" cols="30" rows="10" placeholder="Deixa aqui sua Mensagem"></textarea> </p>
 </fieldset>
 
-<fieldset>
+<fieldset id="pedido">
     <legend> Quero um Google Glass</legend>
-    Gostaria de adquirir um Google Glass quando disponível
-    Cor:
-    Quantidade:
-    Preço Total: R$
+    <p> <input type="checkbox" name="tPed" id="cPed"/>
+        <label for="cPed"> Gostaria de adquirir um Google Glass quando disponível</label></p>
+    <p> <label for="cCor"></label> Cor:<input type="color" name="tCor" id="cCor" value="#0000ff"/></p>
+    <p> <label for="cQnt"></label> Quantidade:<input type="number" name="tQnt" id="cQnt" min="0" max="5"/></p>
+    <p> <label for="cPrt"></label> Preço Total R$:<input type="text" name="tPrt" id="cPrt" placeholder="Total a Pagar" readonly/></p>
+    
+     
 </fieldset>
 
 
-[BOTÃO ENVIAR]
+<input type="image" src="_imagens/botao-enviar.png"/>
 </form>
 
 </article>

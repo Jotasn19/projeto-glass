@@ -1,5 +1,9 @@
 @charset "utf-8";
 
+body{
+    background-color: rgb(112, 184, 243);
+}
+
 section#conteudo{
     width: 1000px;
     margin: auto;
@@ -13,5 +17,3 @@ iframe#frame-spec{
     left: 530px;
     position: relative;
 }
-
-
